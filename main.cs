@@ -8,7 +8,59 @@ class Program
         // CADASTRO
         // =====================
 
-        // código do cadastro dos alunos.
+        bool nota1Valida = false;
+        bool nota2Valida = false;
+        bool idadeAlunoValida = false;
+        string menuCadastro;
+        string[] nomeAluno = new string[10];
+        int[] idadeAluno = new int[10];
+        double[] nota1 = new double[10];
+        double[] nota2 = new double[10];
+
+        int qtdNulos = 0;
+
+        foreach(string nome in nomeAluno)
+        {
+            if(nome == null)
+            {
+                qtdNulos ++;
+            }
+        }
+
+        Console.WriteLine("Quantidade de alunos cadastrados: " + (10 - qtdNulos));
+        
+        if(qtdNulos == 10)
+        {
+            for(int i = 0; i < 2; i++)
+            {
+                Console.WriteLine("Nome: ");
+                nomeAluno[i] = Console.ReadLine();
+                Console.WriteLine("Idade: ");
+                idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
+                while(idadeAlunoValida == false)
+                {
+                    Console.WriteLine(" Idade inválida, insira novamente. \n Idade:");
+                    idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
+                    continue;
+                }
+                Console.WriteLine("Nota 1: ");
+                nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
+                while(nota1Valida == false)
+                {
+                    Console.WriteLine(" Nota inválida, insira novamente. \n Nota 1:");
+                    nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
+                    continue;
+                }
+                Console.WriteLine("Nota 2: ");
+                nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
+                while(nota2Valida == false)
+                {
+                    Console.WriteLine(" Nota inválida, insira novamente. \n Nota 2:");
+                    nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
+                    continue;
+                }
+            }
+        }
 
 
         // =====================
