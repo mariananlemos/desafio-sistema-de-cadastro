@@ -1,0 +1,5 @@
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.AssemblyInfoInputs.cache
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.AssemblyInfo.cs
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.csproj.CoreCompileInputs.cache
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.sourcelink.json
