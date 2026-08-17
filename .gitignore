@@ -1,0 +1,25 @@
+# Arquivos a serem ignorados
+
+# ================================
+# PASTAS PESSOAIS DE TESTE - Marcia Moreira
+# ================================
+/testes-marcia/
+ListagemComentada.cs
+TesteListagem.cs
+Program.cs
+listagem-v1.cs
+
+# ================================
+# PASTAS DE COMPILAÇÃO DO .NET
+# ================================
+/bin/
+/obj/
+/.vs/
+/.vscode/
+
+# ================================
+# ARQUIVOS DO SISTEMA
+# ================================
+Thumbs.db
+.DS_Store
+*.log
