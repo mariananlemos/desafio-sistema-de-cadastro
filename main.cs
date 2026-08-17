@@ -28,37 +28,40 @@ class Program
         }
 
         Console.WriteLine("Quantidade de alunos cadastrados: " + (10 - qtdNulos));
-        
-        if(qtdNulos == 10)
+
+        int qtdNaoNulos = 10 - qtdNulos;
+            
+        for(int i = qtdNaoNulos; i < 10; i++)
         {
-            for(int i = 0; i < 10; i++)
+            Console.Write("Nome: ");
+            nomeAluno[i] = Console.ReadLine().ToLower();
+            Console.Write("Idade: ");
+            idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
+            while(idadeAlunoValida == false)
             {
-                Console.WriteLine("Nome: ");
-                nomeAluno[i] = Console.ReadLine();
-                Console.WriteLine("Idade: ");
+                Console.WriteLine(" Idade inválida, insira novamente. \n Idade:");
                 idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
-                while(idadeAlunoValida == false)
-                {
-                    Console.WriteLine(" Idade inválida, insira novamente. \n Idade:");
-                    idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
-                    continue;
-                }
-                Console.WriteLine("Nota 1: ");
+                continue;
+            }
+            Console.Write("Nota 1: ");
+            nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
+            while(nota1Valida == false)
+            {
+                Console.Write(" Nota inválida, insira novamente. \n Nota 1:");
                 nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
-                while(nota1Valida == false)
-                {
-                    Console.WriteLine(" Nota inválida, insira novamente. \n Nota 1:");
-                    nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
-                    continue;
-                }
-                Console.WriteLine("Nota 2: ");
+                continue;
+            }
+            Console.Write("Nota 2: ");
+            nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
+            while(nota2Valida == false)
+            {
+                Console.Write(" Nota inválida, insira novamente. \n Nota 2:");
                 nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
-                while(nota2Valida == false)
-                {
-                    Console.WriteLine(" Nota inválida, insira novamente. \n Nota 2:");
-                    nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
-                    continue;
-                }
+                continue;
+            }
+            if(Console.ReadKey(true).Key == ConsoleKey.Escape)
+            {
+                break;
             }
         }
 
