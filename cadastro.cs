@@ -35,7 +35,7 @@ for(int i = qtdNaoNulos; i < 10; i++)
 	}
 	Console.Write("Nota 1: ");
 	nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
-	while(nota1Valida == false)
+	while(nota1Valida == false || nota1[i] > 10.0)
 	{
 		Console.Write(" Nota inválida, insira novamente. \n Nota 1:");
 		nota1Valida = double.TryParse(Console.ReadLine(), out nota1[i]);
@@ -43,7 +43,7 @@ for(int i = qtdNaoNulos; i < 10; i++)
 	}
 	Console.Write("Nota 2: ");
 	nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
-	while(nota2Valida == false)
+	while(nota2Valida == false || nota2[i] > 10.0)
 	{
 		Console.Write(" Nota inválida, insira novamente. \n Nota 2:");
 		nota2Valida = double.TryParse(Console.ReadLine(), out nota2[i]);
