@@ -1,21 +1,30 @@
-// Método para listar alunos aprovados - Daianne
-public static void ListarAprovados()
+
+    // Método para listar alunos aprovados - Daianne
+using System;
+
+public class Aprovacao
 {
-    Console.WriteLine("\n===== ALUNOS APROVADOS =====\n");
-
-    int totalAprovados = 0;
-
-    for (int i = 0; i < totalAlunos; i++)
+    public static void ListarAprovados(
+        string[] nomeAluno,
+        double[] nota1,
+        double[] nota2)
     {
-        double media = CalcularMedia(nota1[i], nota2[i]);
+        Console.WriteLine("\n===== ALUNOS APROVADOS =====\n");
 
-        if (media >= 7)
+        int totalAprovados = 0;
+
+        for (int i = 0; i < nomeAluno.Length; i++)
         {
-            Console.WriteLine($"{nomes[i]} - Média {media:F1}");
-            totalAprovados++;
-        }
-    }
+            double media = (nota1[i] + nota2[i]) / 2;
 
-    Console.WriteLine("\n---------------------------");
-    Console.WriteLine($"Total = {totalAprovados} aluno(s)");
+            if (media >= 7)
+            {
+                Console.WriteLine($"{nomeAluno[i]} - Média {media:F1}");
+                totalAprovados++;
+            }
+        }
+
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine($"Total = {totalAprovados} aluno(s)");
+    }
 }
