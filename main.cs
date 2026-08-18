@@ -121,18 +121,51 @@ class Program
                     // =====================
                     // APROVAÇÃO
                     // =====================
-                    Aprovacao.ListarAprovados(nomeAluno, nota1, nota2);
+                    // Aprovacao.ListarAprovados(nomeAluno, nota1, nota2);
+                    {
+                    Console.WriteLine("\n===== ALUNOS APROVADOS =====\n");
+
+                            int totalAprovados = 0;
+                            double somamedias = 0;
+
+                            for (int i = 0; i < nomeAluno.Length; i++)
+                            {
+                                double media = (nota1[i] + nota2[i]) / 2;
+                                somamedias += media; 
+
+                                if (media >= 7)
+                                {
+                                    Console.WriteLine($"{nomeAluno[i]} - Média {media:F1}");
+                                    totalAprovados++;
+                                }
+                            }
+                        double mediaturma = somamedias / nomeAluno.Length;
+
+                            Console.WriteLine("---------------------------------------");
+                            Console.WriteLine($"Total = {totalAprovados} aluno(s)");
+                            Console.WriteLine($"Média da turma = {mediaturma:F2}");
+                                       
                     // código dos aprovados
                     break;
-
+                    }
                 case 4:
                     // =====================
                     // MÉDIA DA TURMA
                     // =====================
+                    {
+                        
+                     double somamedias = 0;
 
-                    // código da média da turma
+                        for (int i = 0; i < nomeAluno.Length; i++)
+                                {
+                                    somamedias += (nota1[i] + nota2[i]) / 2;
+                                }
+
+                        double mediaturma = somamedias / nomeAluno.Length;
+                        Console.WriteLine($"Média da turma = {mediaturma:F2}");
+                            // código da média da turma
                     break;
-
+                    }
                 case 0:
                     Console.WriteLine("Sistema encerrado.");
                     break;
