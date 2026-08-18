@@ -1,0 +1,15 @@
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.AssemblyInfoInputs.cache
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.AssemblyInfo.cs
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.csproj.CoreCompileInputs.cache
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.sourcelink.json
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.dll
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/refint/desafio-sistema-de-cadastro.dll
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.pdb
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/bin/Debug/net10.0/desafio-sistema-de-cadastro
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/bin/Debug/net10.0/desafio-sistema-de-cadastro.deps.json
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/bin/Debug/net10.0/desafio-sistema-de-cadastro.runtimeconfig.json
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/bin/Debug/net10.0/desafio-sistema-de-cadastro.dll
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/bin/Debug/net10.0/desafio-sistema-de-cadastro.pdb
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/desafio-sistema-de-cadastro.genruntimeconfig.cache
+/Users/luanaferreirasouza/desafio-sistema-de-cadastro/obj/Debug/net10.0/ref/desafio-sistema-de-cadastro.dll
