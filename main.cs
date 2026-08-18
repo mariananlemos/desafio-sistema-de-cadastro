@@ -11,7 +11,6 @@ class Program
         bool nota1Valida = false;
         bool nota2Valida = false;
         bool idadeAlunoValida = false;
-        string menuCadastro;
         string[] nomeAluno = new string[10];
         int[] idadeAluno = new int[10];
         double[] nota1 = new double[10];
@@ -35,11 +34,17 @@ class Program
         {
             Console.Write("Nome: ");
             nomeAluno[i] = Console.ReadLine().ToLower();
+            while(nomeAluno[i] == null || nomeAluno[i] == "")
+            {
+                Console.Write(" Nome inválido, insira novamente. \n Nome:");
+                nomeAluno[i] = Console.ReadLine().ToLower();
+                continue;
+            }
             Console.Write("Idade: ");
             idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
             while(idadeAlunoValida == false)
             {
-                Console.WriteLine(" Idade inválida, insira novamente. \n Idade:");
+                Console.Write(" Idade inválida, insira novamente. \n Idade:");
                 idadeAlunoValida = int.TryParse(Console.ReadLine(), out idadeAluno[i]);
                 continue;
             }
