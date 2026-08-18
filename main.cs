@@ -103,7 +103,7 @@ class Program
                     // =====================
                     // APROVAÇÃO
                     // =====================
-
+                    Aprovacao.ListarAprovados(nomeAluno, nota1, nota2);
                     // código dos aprovados
                     break;
 
