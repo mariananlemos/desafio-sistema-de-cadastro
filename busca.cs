@@ -1,5 +1,5 @@
 // Console.WriteLine("Digite o nome do aluno:");
-// string nomeBuscado = Console.ReadLine();
+// string nomeBuscado = Console.ReadLine().ToLower();
 // bool encontrado = false;
 
 // for (int i =0; i < nomeAluno.length(); i++)
