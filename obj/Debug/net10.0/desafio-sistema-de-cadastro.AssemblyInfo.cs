@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("desafio-sistema-de-cadastro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9302128699ef750b123597ab8c627d1d571460cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9546c1218d4e588de42d524982b51d5132223f10")]
 [assembly: System.Reflection.AssemblyProductAttribute("desafio-sistema-de-cadastro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("desafio-sistema-de-cadastro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
