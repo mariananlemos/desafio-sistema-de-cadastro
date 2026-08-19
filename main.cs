@@ -87,7 +87,13 @@ class Program
             Console.WriteLine("0 - Encerrar");
             Console.Write("Escolha uma opção: ");
 
-            opcao = Convert.ToInt32(Console.ReadLine());
+if (!int.TryParse(Console.ReadLine(), out opcao))
+{
+    Console.WriteLine("Opção inválida! Digite um número.");
+    Console.WriteLine("Vou voltar para o menu...");
+    opcao = -1;
+    continue;
+}
 
             switch (opcao)
             {
